@@ -118,7 +118,7 @@ function Sidebar() {
       </div>
 
       {/* Shared with me */}
-      {groupedData.editor.length > 0 && (
+      {(groupedData.editor.length > 0 || groupedData.viewer.length) && (
         <>
           <h2 className="text-gray-500 font-semibold text-sm">
             Shared With Me
