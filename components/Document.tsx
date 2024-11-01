@@ -32,7 +32,7 @@ function Document({ id }: { id: string }) {
         await updateDoc(doc(db, "documents", id), {
           title: input,
         });
-      });
+      });      
     }
   };
 
