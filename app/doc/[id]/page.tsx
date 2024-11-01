@@ -1,7 +1,7 @@
 "use client";
 
 import Document from "@/components/Document";
-import { use } from "react";
+import { use, useEffect } from "react";
 
 function DocumentPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
