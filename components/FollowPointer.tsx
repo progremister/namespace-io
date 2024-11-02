@@ -18,7 +18,7 @@ function FollowPointer({
 
   return (
     <motion.div
-      className="h-4 w-4 rounded-full absolute z-50 "
+      className="h-6 w-6 rounded-full absolute z-50 "
       style={{
         top: y,
         left: x,
@@ -42,7 +42,7 @@ function FollowPointer({
         fill={color}
         strokeWidth="1"
         viewBox="0 0 20 20"
-        className={`h-4 w-4 text-[${color}] transform-rotate-[70deg] translate-x-[40px] translate-y-[10px] stroke-[${color}]`}
+        className={`h-4 w-4 text-[${color}] transform-rotate-[70deg] translate-x-[18px] translate-y-[10px] stroke-[${color}]`}
         height="1em"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ function FollowPointer({
           opacity: 0,
         }}
       >
-        {info.name || info.email}
+        {info?.name || info?.email}
       </motion.div>
     </motion.div>
   );

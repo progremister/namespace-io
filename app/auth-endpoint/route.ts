@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
       email: sessionClaims?.email!,
       image: sessionClaims?.image!,
     },
-  });  
+  });
 
   const usersInRoom = await adminDb
     .collectionGroup("rooms")
